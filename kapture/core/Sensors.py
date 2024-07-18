@@ -88,6 +88,7 @@ class CameraType(AutoEnum):
     RADIAL_FISHEYE = auto()
     THIN_PRISM_FISHEYE = auto()
     UNKNOWN_CAMERA = auto()
+    CYLINDRICAL = auto()
 
 
 CAMERA_TYPE_PARAMS_COUNT = {
@@ -146,6 +147,8 @@ CAMERA_TYPE_PARAMS_COUNT = {
     # J Weng et al., TPAMI, 1992.
     # w, h, fx, fy, cx, cy, k1, k2, p1, p2, k3, k4, sx1, sx2
     CameraType.THIN_PRISM_FISHEYE: 14,
+
+    CameraType.CYLINDRICAL: 6,
 
     # Non calibrated camera
     # w, h
