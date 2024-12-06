@@ -89,7 +89,7 @@ class CameraType(AutoEnum):
     THIN_PRISM_FISHEYE = auto()
     UNKNOWN_CAMERA = auto()
     CYLINDRICAL = auto()
-    MEI = auto()
+    MEI_FISHEYE = auto()
 
 
 CAMERA_TYPE_PARAMS_COUNT = {
@@ -153,7 +153,7 @@ CAMERA_TYPE_PARAMS_COUNT = {
     CameraType.CYLINDRICAL: 6,
 
     # w, h, gamma1, gamma2, cx, cy, xi, k1, k2 
-    CameraType.MEI: 9,
+    CameraType.MEI_FISHEYE: 9,
 
     # Non calibrated camera
     # w, h

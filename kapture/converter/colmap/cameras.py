@@ -20,6 +20,7 @@ CAMERA_MODEL_NAME_ID = [
     ('RADIAL_FISHEYE', 9),
     ('THIN_PRISM_FISHEYE', 10),
     ('CYLINDRICAL', 11),
+    ('MEI_FISHEYE', 12),
 ]
 
 CAMERA_MODEL_NAMES = {i: name for name, i in CAMERA_MODEL_NAME_ID}
